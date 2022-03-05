@@ -4,6 +4,13 @@
     <meta charset="utf-8">
     <title>EDIYA-shindaebang</title>
     <style>
+
+      body {
+        margin: 0;
+      }
+      nav{
+        overflow: hidden; /* 텍스트는 text-overflow로 따로해야 같이 잘린다*/
+      }
       .top{
         /*상단 베너*/
         width: 100%;
@@ -28,7 +35,6 @@
         color: white;
       }
       .menu_back_image img{ /*배경이미지 설정*/
-        width: 100%;
         position: relative;
       }
       .menu_back_image #sp1{ /*배경이미지 상단 글씨 중복 <span>쓰기 위해 id사용*/
@@ -66,6 +72,10 @@
         background-color: white;
         color: black;
       }
+      #sp2 a{
+        color: #ddd;
+        text-decoration: none;
+      }
     </style>
   </head>
   <body>
@@ -75,7 +85,7 @@
       </div>
 
       <div class="logo">
-        <a href="ediya.html"><img src="image\top_logo.gif"></a>
+        <a href="index.html"><img src="image\top_logo.gif"></a>
       </div>
     </header>
     <nav>
@@ -89,7 +99,7 @@
         <span id="sp2">
           <table>
             <tr>
-              <td id="menu_clicked">음료</td><td>베이커리</td><td>재료</td>
+              <td id="menu_clicked">음료</td><td><a href="ediya_bakery.html">베이커리</a></td><td><a href="ediya_ingredient.html">재료</a></td>
             </tr>
           </table>
         </span>
